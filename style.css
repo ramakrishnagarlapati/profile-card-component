@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Kumbh Sans', sans-serif;
+    background: url("images/bg-pattern-top.svg") top -45rem left -35rem, url('images/bg-pattern-bottom.svg') bottom -45rem right -40rem;
+    background-color: hsl(185, 75%, 39%);
+    background-repeat: no-repeat, no-repeat;
+}
+
+main {
+    max-width: 350px;
+    width: 90%;
+    margin: 3rem 0;
+}
+
+.image-container {
+    width: 100%;
+    background-image: url(images/bg-pattern-card.svg);
+    height: 8rem;
+    border-radius: 15px 15px 0 0;
+}
+
+.profile-container {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 0.1px solid hsl(224, 14%, 85%);
+}
+
+.profile-container img {
+    border-radius: 50%;
+    border: 4px solid white;
+    position: relative;
+    top: -3em;
+
+}
+
+.profile-container h1 {
+    color: hsl(229, 23%, 23%);
+    font-size: 1.5rem;
+
+}
+
+.profile-container h1 .age {
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+    margin-left: 0.6rem;
+}
+
+.profile-container .location {
+    margin: 0.5rem 0 2rem 0;
+    color: hsl(0, 0%, 59%);
+}
+
+.figures {
+    background-color: whitesmoke;
+    border-radius: 0 0 15px 15px;
+    padding: 2rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.figures div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.figures div .figure {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.figures div .figure-desc {
+    color: hsl(0, 0%, 59%);
+    font-size: 0.9rem;
+}
